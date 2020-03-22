@@ -1,0 +1,21 @@
+{
+    "name": "node-red-contrib-sftp-watcher",
+    "version": "0.0.1",
+    "description": "A Node-RED wrapper around the sftp-watcher package",
+    "keywords": [
+        "node-red",
+        "sftp",
+        "watcher",
+        "sftp-watcher"
+    ],
+    "node-red": {
+        "nodes": {
+            "sftp-watcher": "sftp-watcher/index.js"
+        }
+    },
+    "author": "FrankZZ",
+    "license": "MIT",
+    "dependencies": {
+        "sftp-watcher": "^2.0.5"
+    }
+}
