@@ -2,9 +2,14 @@
     RED.nodes.registerType('sftp-watcher', {
         category: 'input',
         color: '#bba5cf',
+        defaults: {
+            name: { value: '' }
+        },
         inputs: 0,
         outputs: 1,
-        label: () => 'SFTP Watcher'
+        label: function() {
+            return this.name || 'sftp-watcher'
+        }
     });
 </script>
 
@@ -15,8 +20,24 @@
     </div>
 
     <div class="form-row">
-        <label for="node-input-device"><i class="icon-tag"></i>SFTP Watcher</label>
-        <input type="text" id="node-input-device" placeholder="">
+        <label for="node-input-port"><i class="icon-tag"></i> Port</label>
+        <input type="text" id="node-input-port" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-username"><i class="icon-tag"></i> Username</label>
+        <input type="text" id="node-input-username" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-password"><i class="icon-tag"></i> Password</label>
+        <input type="password" id="node-input-password" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-path"><i class="icon-tag"></i> Path</label>
+        <input type="text" id="node-input-path" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-regex"><i class="icon-tag"></i> Filename RegExp</label>
+        <input type="text" id="node-input-regex" placeholder="">
     </div>
 
 
