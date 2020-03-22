@@ -71,6 +71,7 @@ module.exports = (RED) => {
     RED.nodes.registerType('sftp-watcher', SftpWatcherNode, {
         host: 'string',
         port: 'integer',
+        user: 'text',
         password: 'password',
         path: 'string',
         regex: 'string',
