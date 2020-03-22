@@ -65,9 +65,10 @@ module.exports = (RED) => {
         });
 
         sftp.on('upload', (data) => {
-            node.log('file uploaded', data.filename);
+            const { file } = data;
+            node.log('file uploaded', file.filename);
 
-            if (regex && !regex.test(data.filename)) {
+            if (regex && !regex.test(file.filename)) {
                 node.log('file does not match regex', data.filename);
                 return;
             }
