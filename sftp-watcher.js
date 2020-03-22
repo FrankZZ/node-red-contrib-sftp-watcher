@@ -21,8 +21,11 @@ module.exports = (RED) => {
             port,
             user,
             password,
-            path
+            path,
+            regex
         } = config;
+
+        regex = new RegExp(regex);
 
         const sftp = new SftpWatcher({
             host,
