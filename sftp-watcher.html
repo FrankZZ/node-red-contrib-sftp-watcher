@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('sftp-watcher', {
+        category: 'input',
+        color: '#bba5cf',
+        inputs: 0,
+        outputs: 1,
+        label: () => 'SFTP Watcher'
+    });
+</script>
+
+<script type="text/x-red" data-template-name="sftp-watcher">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-device"><i class="icon-tag"></i>SFTP Watcher</label>
+        <input type="text" id="node-input-device" placeholder="">
+    </div>
+
+
+</script>
+
+<script type="text/x-red" data-help-name="sftp-watcher">
+    <p>Provides a node for watching a folder on an SFTP server by polling every 2s.</p>
+</script>

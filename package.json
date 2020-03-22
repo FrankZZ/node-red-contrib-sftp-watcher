@@ -10,7 +10,7 @@
     ],
     "node-red": {
         "nodes": {
-            "sftp-watcher": "sftp-watcher/index.js"
+            "sftp-watcher": "sftp-watcher.js"
         }
     },
     "author": "FrankZZ",
