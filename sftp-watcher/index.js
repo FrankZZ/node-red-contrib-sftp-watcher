@@ -16,8 +16,8 @@ module.exports = (RED) => {
             text: 'connecting...'
         });
 
-        const { host,
-            port,
+        const {
+            host,
             user,
             password,
             path
@@ -68,6 +68,12 @@ module.exports = (RED) => {
 
     };
 
-    RED.nodes.registerType('sftp-watcher', SftpWatcherNode);
+    RED.nodes.registerType('sftp-watcher', SftpWatcherNode, {
+        host: 'string',
+        port: 'integer',
+        password: 'password',
+        path: 'string',
+        regex: 'string',
+        path: 'string'
+    });
 };
-
