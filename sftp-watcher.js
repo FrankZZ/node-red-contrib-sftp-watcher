@@ -18,6 +18,7 @@ module.exports = (RED) => {
 
         const {
             host,
+            port,
             user,
             password,
             path
