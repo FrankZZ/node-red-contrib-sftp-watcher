@@ -41,6 +41,16 @@ module.exports = (RED) => {
             node.warn('disconnected', data);
         });
 
+        sftp.on('connected', (data) => {
+            node.status({
+                color: 'green',
+                shape: 'dot',
+                text: 'connected'
+            });
+
+            node.log('connected', data);
+        });
+
         sftp.on('error', (err) => {
             node.status({
                 color: 'red',
