@@ -16,6 +16,6 @@
     "author": "FrankZZ",
     "license": "MIT",
     "dependencies": {
-        "sftp-watcher": "^2.0.5"
+        "sftp-watcher": "^2.0.6"
     }
 }
